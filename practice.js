@@ -86,17 +86,16 @@ let devMountainClassPet = dog.name;
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 // Code here
-let name = userInput
 function nameCheck(name) 
 {
   if (name === 'Steven') {
-    console.log('What is up Steven?') 
+    return 'What is up Steven?' 
   }
   else if (name === 'Bryan') {
-    console.log('Hey Bryan!')
+    return 'Hey Bryan!'
   }
   else {
-    console.log('Cool name, ' + userInput)
+    return 'Cool name, ' + name
   }
 }
 
@@ -115,8 +114,8 @@ function add(num1, num2) {
 //storing the result in the variable mathSum.
 
 //Code Here
-add(3, 4);
-console.log() = mathsum;
+let mathSum = add(3, 4);
+
 //////////////////PROBLEM 12////////////////////
 
 //Write a function called faveColorFinder that takes in one parameter called color
@@ -127,21 +126,22 @@ console.log() = mathsum;
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 // Code here
-let color = userInput
-function faveColorFinder(color) 
+function faveColorFinder(color)
 {
   if (color === 'red') {
-    console.log('red is a great color');
-    if (color === green) {
-      console.log('green is a solid favorite color');
-      if (color === black) {
-        console.log('so trendy');
-        if (color !== red || green || black) {
-          console.log('you need to evalute your favorite color choice');
-        }
-      }
-    }
+    return 'red is a great color'
   }
+  else if (color === 'green') {
+    return 'green is a solid favorite color'
+  }
+  else if (color === 'black') {
+    return 'so trendy'
+  }
+  else {
+    return 'you need to evaluate your favorite color choice'
+  }
+}
+
 //////////////////PROBLEM 13////////////////////
 
 let duck = "cute";
@@ -165,13 +165,10 @@ function pond() {
 
 //This array should contain the variable names (as strings) accessible in the global scope.
 let globalScope = ["duck"];
-
 //This array should contain the variable names (as strings) accessible in the bathroom function.
 let bathroomScope = ["rubberDuck", "sailorduck"];
-
 //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = ["sailorDuck"];
-
 //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = ["realDuck"];
 
